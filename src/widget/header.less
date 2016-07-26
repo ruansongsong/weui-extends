@@ -1,0 +1,35 @@
+@import "../base/fn.less";
+// header
+header{
+	position: fixed;
+	top: 0;
+	height: @headerHeight;
+	width: @headerWidth;
+	background: @headerBg;
+	line-height: @headerHeight;
+	&:after{
+		.setBottomLine();
+	}
+	.header-left,
+	.header-right{
+		display: inline-block;
+		padding: 0 10px;
+	}
+	.header-left{
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: @white;
+	}
+	.header-middle{
+		text-align: center;
+		font-size: 16px;
+		color: @white;
+	}
+	.header-right{
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: @white;
+	}
+}
