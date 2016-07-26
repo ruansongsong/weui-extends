@@ -4,6 +4,7 @@ var  sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
+var reload  = browserSync.reload;
 var rename = require('gulp-rename');
 var cssnano = require('gulp-cssnano');
 var header = require('gulp-header');
@@ -25,13 +26,15 @@ gulp.task('less', function () {
 	.pipe(browserSync.reload({stream: true}));
 });
 gulp.task('watch', function() {
-    gulp.watch('src/style/**/*', ['less']);
+    gulp.watch('src/**/*', ['less']);
+    gulp.watch("dist/example/*.html").on('change', reload);
 });
 gulp.task('server', function () {
 	browserSync.init({
 		server: {
 			baseDir: './dist'
-		}
+		},
+		startPath: '/example'
 	});
 });
 gulp.task('test', function () {

@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-	<title>test</title>
-	<link rel="stylesheet" type="text/css" href="../style/weui_extend.css">
-	<link rel="stylesheet" type="text/css" href="../style/weui.min.css">
-</head>
-<body>
-	<header>
-		<div class="header-left">返回</div>
-		<div class="header-middle"></div>
-		<div class="header-right"></div>
-	</header>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>test</title>
+		<link rel="stylesheet" type="text/css" href="../style/weui.min.css">
+		<link rel="stylesheet" type="text/css" href="../style/weui_extend.css">
+		<style type="text/css">
+			.example1{
+				top:60px;
+			}
+			.example2{
+				top:120px;
+			}
+			.example3{
+				top:180px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>			
+			<div class="header-left">				
+				<i class="icon-font">&#xe602;返回</i>
+			</div>			
+			<h1 class="header-middle">标题</h1>
+			<div class="header-right">其他</div>				
+		</header>
+		<header class="example1">			
+			<div class="header-left">				
+				<i class="icon-font">&#xe602;</i>
+			</div>			
+			<h1 class="header-middle">标题</h1>			
+			<div class="header-right"></div>			
+		</header>
+		<header class="example2">			
+			<h1 class="header-middle">标题</h1>			
+			<div class="header-right">
+				<i class="icon-font">&#xe606;</i>
+			</div>			
+		</header>
+		<header class="example3">			
+			<div class="header-left">				
+				<i class="icon-font">&#xe606;</i>
+			</div>			
+			<h1 class="header-middle">标题</h1>			
+			<div class="header-right"><i class="icon-font">&#xe604;</i></div>			
+		</header>
+	</body>
 </html>
