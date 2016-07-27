@@ -16,7 +16,7 @@ var banner =
 * author ruansongsong\n\
 */\n";
 gulp.task('less', function () {
-	gulp.src('src/weui_extend.less')
+	gulp.src('src/weui-extend.less')
 	.pipe(sourcemaps.init())
 	.pipe(less())
 	.pipe(postcss([autoprefixer(['ios >= 7', 'android >= 4.1'])]))
