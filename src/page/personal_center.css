@@ -1,0 +1,60 @@
+.weui_tab_bd{
+	padding-top: 44px;
+}
+.personal-header{
+	height: 150px;
+}
+.head-logo-bd{
+	position: absolute;
+	margin-top: -150px;
+	width: 100%;
+	height: 150px;
+}
+.head-logo-bd .head-logo{
+	margin-top: -60px;
+	margin-left: -40px;
+	position: absolute;
+	display: block;
+	top:50%;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	z-index: 200;
+}
+.head-logo-bd .head-logo > img{
+	box-sizing: border-box;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 2px solid #ececec;
+}
+.head-logo-bd .user-detail{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	z-index: 200;
+	color: #fff;
+}
+.head-logo-bd .user-name{
+	font-size: 14px;
+	text-overflow: ellipsis;
+}
+.head-logo-bd .user-vip{
+	color: #FF6633
+}
+.icon-cell{
+	display: block;
+	width: 20px;
+	margin-right: 5px;
+}
+.weui_tab{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	height: 56px;
+}
+.icon{
+	width: 24px;
+	height: 24px;
+}

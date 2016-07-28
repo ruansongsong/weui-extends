@@ -25,6 +25,24 @@ gulp.task('less', function () {
 	.pipe(gulp.dest('dist/style'))
 	.pipe(browserSync.reload({stream: true}));
 });
+// 发布到webapp的项目目录中
+gulp.task('lessed', function () {
+	gulp.src('src/test/weui-extend.less')
+	.pipe(sourcemaps.init())
+	.pipe(less())
+	.pipe(postcss([autoprefixer(['ios >= 7', 'android >= 4.1'])]))
+	.pipe(header(banner))
+	.pipe(cssnano({
+            zindex: false,
+            autoprefixer: false
+        }))
+	.pipe(rename(function (path) {
+		path.basename += '.min';
+	}))
+
+	.pipe(gulp.dest('../workspace/trunk/src/main/webapp/static/css/'))
+});
+
 gulp.task('watch', function() {
     gulp.watch('src/**/*', ['less']);
     gulp.watch("dist/example/*.html").on('change', reload);

@@ -1,0 +1,24 @@
+.open-popup{
+	color: #888;
+	text-decoration: underline;
+}
+.service-detail{
+	padding: 15px 0;
+	text-align: center;
+}
+.service-detail h1{
+	margin-bottom: 0;
+	font-size: 24px;
+	color: #04BE02;
+}
+.service-detail p{
+	margin-top: 0;
+}
+ol{
+	padding-left: 2em;
+}
+.or{
+	font-size: 16px;
+	text-align: center;
+	color: #888;
+}

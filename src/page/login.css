@@ -1,0 +1,25 @@
+body{
+	background: #fbf9fe;
+}
+.top-image{
+	width: 100%;
+}
+.icon{
+	display: block;
+	margin-right: 5px;
+	width: 20px;
+}
+.footer{
+	position: absolute;
+	bottom: 16px;
+	width: 100%;
+	text-align: center;
+}
+.footer a{
+	font-size: 16px;
+	color: #888;
+	text-decoration: none;
+}
+input:-webkit-autofill {
+-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
