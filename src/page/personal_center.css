@@ -30,17 +30,26 @@
 }
 .head-logo-bd .user-detail{
 	position: absolute;
-	bottom: 10px;
+	bottom: 4px;
 	width: 100%;
 	text-align: center;
 	z-index: 200;
 	color: #fff;
 }
-.head-logo-bd .user-name{
+.head-logo-bd .user-detail .user-name{
 	font-size: 14px;
 	text-overflow: ellipsis;
 }
-.head-logo-bd .user-vip{
+.head-logo-bd .user-detail .user-tips{
+	font-size: 14px;
+	text-overflow: ellipsis;
+}
+.head-logo-bd .user-detail .change-img{
+	width: 1px;
+	height: 1px;
+	visibility: hidden;
+}
+.head-logo-bd .user-detail .user-vip{
 	color: #FF6633
 }
 .icon-cell{
