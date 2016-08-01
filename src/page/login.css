@@ -3,6 +3,7 @@ body{
 }
 .top-image{
 	width: 100%;
+	box-shadow: 0 2px 3px #aaaaaa;
 }
 .icon{
 	display: block;
