@@ -1,0 +1,68 @@
+@import "../base/fn.less";
+.comment{
+	position: relative;
+	background: #fff;
+	overflow: hidden;
+	.comment-item{
+		position: relative;
+		display: flex;
+		display: -webkit-flex;
+		padding: 10px 15px;
+		&:before{
+			.setTopLine(#d9d9d9);
+			left:15px;
+		}
+		//评论条目左边的内容
+		.comment-item-left{
+			position: relative;
+			width: 44px;
+			//头像
+			img {
+				width: 44px;
+				height: 44px;
+			}
+		}
+		//评论条目右边的内容
+		.comment-item-right{
+			padding-left: 10px;
+			flex: 1;
+			-webkit-flex:1;
+			//评论者的信息
+			.item-user-name{
+				font-size: 16px;
+			}
+			.item-user-detail{
+				font-size: 14px;
+				color: #888
+			}
+			.item-user-extra {
+				font-size: 14px;
+				color: #888;
+				//回复按钮
+				.item-user-extra-reply-button{
+					float: right;
+				}
+			}
+			// 回复的内容
+			.item-reply-user{
+				margin-top: 5px;
+				.reply-user-name{
+					padding-left: 5px;
+					border-left: 4px solid #04BE02;
+					font-size: 16px;
+				}
+				.reply-user-detail{
+					font-size: 14px;
+					color: #888;
+				}
+			}
+		}
+
+	}
+	&:before{
+		.setTopLine(#d9d9d9);
+	}
+	&:after{
+		.setBottomLine(#d9d9d9);
+	}
+}
