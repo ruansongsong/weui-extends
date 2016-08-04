@@ -1,0 +1,64 @@
+.nav-bar{
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 40px;
+	background: #fbf9fe;
+	z-index: 999;
+	.nav-bar-item{
+		position: relative;
+		display: block;
+		flex: 1;
+		padding: 5px 0;
+		text-align: center;
+		font-size: 14px;
+		line-height: 30px;
+		&:after{
+			content: " ";
+			position: absolute;
+	    right: 0;
+	    top: 0;
+			height: 100%;
+			width: 1px;
+			border-right: 1px solid #cccccc;
+			color: #cccccc;
+			transform-origin: 100% 0;
+			transform: scaleX(0.5);
+		}
+	}
+	// .nav-bar-item-on{
+	// 	border-top: 1px solid #57a2d7;
+	// 	color: #57a2d7;
+	// }
+}
+// 在顶部的nav
+.nav-bar-top{
+	position: fixed;
+	top: 44px;
+	.nav-bar-item{
+		border-bottom: 1px solid #cccccc;
+	}
+	.nav-bar-item-top-on{
+		border-bottom: 1px solid #57a2d7;
+		color: #57a2d7;
+	}
+
+}
+// 在底部的nav
+.nav-bar-bottom{
+	position: fixed;
+	bottom: 0;
+	.nav-bar-item{
+		border-top: 1px solid #cccccc;
+	}
+	.nav-bar-item-bottom-on{
+		border-top: 1px solid #57a2d7;
+		color: #57a2d7;
+	}
+
+
+}
+.nav-bar-bd{
+	padding: 84px 0 40px;
+	overflow-x: hidden;
+}
