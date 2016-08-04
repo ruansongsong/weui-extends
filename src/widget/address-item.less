@@ -21,64 +21,44 @@
 			width: 80%;
 			.address-item-user{
 				div {
+					font-size: 16px;
 					display: inline-block;
 					margin-right: 10px;
+					color: #989899;
 				}
 			}
 			.address-item-address-detail{
 				font-size: 14px;
-				color: #888;
+				color: #989899;
 			}
 		}
 		.address-item-right {
-			img {
-				width: 24px;
+			.icon {
+				width: 30px;
 				height: 24px;
+				color: #989899;
+				text-align: center;
 			}
-			p{
+			p {
 				font-size: 14px;
-				color: #888;
+				color: #989899;
 			}
 		}
 		&:before{
-			content: " ";
-			position: absolute;
-			top: 0;
-			width: 100%;
-			height: 1px;
-			border-top: 1px solid #d9d9d9;
-			color: #d9d9d9;
-			transform-origin: 0 0;
-			transform: scaleY(0.5);
-			-webkit-transform:scaleY(0.5);
+			.setTopLine(#d9d9d9);
+			left:15px;
 		}
 
 	}
 	&:before{
-		content: " ";
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 1px;
-		border-top: 1px solid #d9d9d9;
-		color: #d9d9d9;
-		transform-origin: 0 0;
-		transform: scaleY(0.5);
-		-webkit-transform:scaleY(0.5);
+		.setTopLine(#d9d9d9);
 	}
 	&:after{
-		content: " ";
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		height: 1px;
-		border-top: 1px solid #d9d9d9;
-		color: #d9d9d9;
-		transform-origin: 0 0;
-		transform: scaleY(0.5);
-		-webkit-transform:scaleY(0.5);
+		.setBottomLine(#d9d9d9);
 	}
 	
+}
+.header-bd{
+	padding-top: 50px;
+	padding-bottom: 56px;
 }
