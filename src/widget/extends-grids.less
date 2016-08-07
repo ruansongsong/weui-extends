@@ -1,0 +1,87 @@
+.extends-grids{
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  &:before {
+      content: '';
+      position: absolute;
+      box-sizing: border-box;
+      width: 200%;
+      height: 200%;
+      left: 0;
+      top: 0;
+      border: 1px solid #d9d9d9;
+      transform-origin: 0 0;
+      transform: scale(.5);
+  }
+  .grids-left{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    padding: 10px 10px;
+    // background: #eee;
+    box-sizing: border-box;
+    &:before{
+      .setLine(#d9d9d9);
+    }
+  }
+  .grids-right{
+    position: relative;
+    float: right;
+    width: 60%;
+    box-sizing: border-box;
+    // background: #999;
+    .grids-right-top{
+      position: relative;
+      padding: 10px 10px;
+      box-sizing: border-box;
+      &:before{
+        .setLine(#d9d9d9);
+      }
+    }
+    .grids-right-bottom{
+      width: 100%;
+      box-sizing: border-box;
+      .grids-right-bottom-left,
+      .grids-right-bottom-right{
+        position: relative;
+        padding: 10px 10px;
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+         &:before{
+           .setLine(#d9d9d9);
+         }
+      }
+    }
+  }
+}
+// grids icon
+.extends-grids-icon{
+  height: 28px;
+  width: 28px;
+  margin: 0 auto;
+}
+.extends-grids_label{
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #79797a;
+}
+.setLine(@color){
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 200%;
+  height: 200%;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid @color;
+  border-right: 1px solid @color;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+}
