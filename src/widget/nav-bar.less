@@ -4,7 +4,7 @@
 	width: 100%;
 	height: 40px;
 	background: #fbf9fe;
-	z-index: 999;
+	z-index: 998;
 	.nav-bar-item{
 		position: relative;
 		display: block;
@@ -61,4 +61,15 @@
 .nav-bar-bd{
 	padding: 84px 0 40px;
 	overflow-x: hidden;
+}
+
+// 滚动隐藏head
+.headroom {
+	transition: all .3s ease-in-out;
+}
+.headroom--unpinned {
+	top: -100px;
+}
+.headroom--pinned {
+	top: 44px;
 }
