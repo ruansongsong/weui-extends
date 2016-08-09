@@ -1,0 +1,44 @@
+@import "../base/fn.less";
+.category-bd{
+	position: relative;
+	padding: 84px 0 0 0;
+	background: #fff;
+  &:before{
+    .setTopLine(#d9d9d9);
+  }
+  &:after{
+    .setBottomLine(#d9d9d9);
+  }
+}
+.category-item{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 15px;
+	font-size: 14px;
+	color: #989899;
+  &:before{
+    .setTopLine(#d9d9d9);
+    left:15px;
+  }
+  .hospital-number{
+  	width: 50%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+  }
+	.hospital-name{
+		flex: 1;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+  .delete-img{
+    width: 24px;
+    height: 24px;
+    img{
+    	width: 24px;
+    	height: 24px;
+    }
+  }
+}
