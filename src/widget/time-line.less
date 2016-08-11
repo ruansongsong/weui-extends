@@ -33,6 +33,9 @@
 			font-size: 16px;
 			color: @timeColor;
 		}
+		span {
+			float: right;
+		}
 		.time-line-meta{
 			font-size: 14px;
 			color: #989899;
@@ -41,5 +44,34 @@
 			font-size: 14px;
 			color:#989899;
 		}
+	}
+}
+// 时间线中的图片
+// 图片大小
+@length:60px;
+// margin
+@margin:5px;
+.image-list{
+	margin-left: 18px;
+	display: flex;
+	flex-flow: row wrap;
+	.image-item{
+		width: @length;
+		height: @length + 20px;
+		margin: 0 @margin @margin 0;
+		background: #eee;
+		img {
+			display: block;
+			width: @length;
+			height: @length;
+		}
+		.image-name{
+			height: 20px;
+			line-height: 20px;
+			font-size: 14px;
+			color: #989899;
+			text-align: center;
+		}
+
 	}
 }
