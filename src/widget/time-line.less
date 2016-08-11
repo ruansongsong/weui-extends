@@ -35,6 +35,9 @@
 		}
 		span {
 			float: right;
+			padding: 0 4px;
+			border-radius: 2px;
+			border: 1px solid @timeColor;
 		}
 		.time-line-meta{
 			font-size: 14px;
@@ -52,14 +55,13 @@
 // margin
 @margin:5px;
 .image-list{
-	margin-left: 18px;
+	margin:5px 0 0 18px;
 	display: flex;
 	flex-flow: row wrap;
 	.image-item{
 		width: @length;
 		height: @length + 20px;
 		margin: 0 @margin @margin 0;
-		background: #eee;
 		img {
 			display: block;
 			width: @length;
