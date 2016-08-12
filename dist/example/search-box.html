@@ -24,10 +24,11 @@
 		<script>
 			$(document).ready(function () {
 				$("#input").on('input paste', function(){
-					$(this).val() ? $(".clear-button").css('visibility','visible') : $(".clear-button").css('visibility','hidden');
+					$(this).val().length > 0 ? $(".clear-button").css('visibility','visible') : $(".clear-button").css('visibility','hidden');
 				});
 				$(".clear-button").on('click', function () {
 					$("#input").val('');
+					$(this).css('visibility','hidden');
 				});
 			})
 		</script>
