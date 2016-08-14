@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>垂直居中对齐</title>
+  <style>
+    .box{
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background: #eee;
+      vertical-align: middle;
+    }
+    .sub-box{
+      position: relative;
+      width: 200px;
+      height: 200px;
+      top:50%;
+      transform: translateY(-50%);
+      background: #999;
+    }
+    .box1{
+      display: table-cell;
+      height: 200px;
+      width: 200px;
+      border: 1px solid #eee;
+      vertical-align: middle;
+    }
+    /*span{
+      vertical-align: middle;
+    }*/
+    .box2{
+      height: 200px;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="sub-box">
+
+    </div>
+
+  </div>
+  <div class="box1">
+    <p>xuanxuandddddddddddddd</p>
+    <p>ddddddddddddddddddddddddddddd</p>
+  </div>
+  <div class="box2">
+    <span>xuanxuanddddddddddddddddddddddddddddddddddddddddddd</span>
+  </div>
+</body>
+</html>
