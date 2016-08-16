@@ -79,6 +79,7 @@
 			left:15px;
 		}
 		.feed-item-left{
+			position: relative;
 			margin-right: 0.8em;
 			width: 60px;
 			height: 60px;
@@ -179,4 +180,34 @@
 .feed2-item{
 	margin: 44px 0 40px 0;
 }
-// 三个
+
+// feed 中有两行的情况
+.feed-item-two-columns{
+	flex-direction: column;
+}
+.feed-item-first-column{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	align-items: center;
+}
+.feed-item-second-column{
+	margin-top: 8px;
+	color: #989899;
+	font-size: 14px;
+	height:14px;
+	line-height: 14px;
+}
+.feed-item-second-column span{
+	margin-left: 2px;
+	vertical-align: top;
+}
+.wait-answer{
+	font-size: 14px;
+	color: #989899;
+	text-align: center;
+}
+// 我要咨询页面的bd
+.bars-bd{
+	padding: 54px 0 56px 0;
+}
