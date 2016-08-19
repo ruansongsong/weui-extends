@@ -1,0 +1,20 @@
+.grids-four{
+	width: 25%;
+}
+.grids-four:nth-child(3n):before{
+	border-right-width: 1px;
+}
+.grid-four:nth-child(4n):before{
+	border-right-width: 0;
+}
+.weui_grid_label{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  font-size: 12px;
+}
+.weui_cells_title_all{
+	float: right;
+	color: #888;
+	font-size: 14px;
+}
