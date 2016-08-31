@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>test</title>
+		<link rel="stylesheet" type="text/css" href="../style/weui.min.css">
+		<link rel="stylesheet" type="text/css" href="../style/weui-extend.css">
+		<link rel="stylesheet" href="../style/swiper.min.css">
+		<style type="text/css">
+			html, body{
+				position: relative;
+			}
+      body{
+        background: #fbf9fe;
+      }
+			.swiper-container .swiper-wrapper {
+				width: 100%;
+				height: 160px;
+			}
+			.swiper-container .swiper-wrapper img {
+
+				width: 100%;
+				height: 160px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="swiper-container">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide"><img src="../images/swiper1.jpg"/></div>
+				<div class="swiper-slide"><img src="../images/swiper2.png"/></div>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="weui_cells_title">栏目</div>
+    <div class="extends-grids">
+      <div class="grids-left">
+				<div class="extends-grids-icon"></div>
+				<div class="extends-grids_label">健康智慧</div>
+			</div>
+      <div class="grids-right">
+        <div class="grids-right-top">
+				<div class="extends-grids-icon"></div>
+				<div class="extends-grids_label">营养</div>
+				</div>
+				<div class="grids-right-top">
+				<div class="extends-grids-icon"></div>
+				<div class="extends-grids_label">康复助手</div>
+				</div>
+        <!-- <div class="grids-right-bottom">
+          <div class="grids-right-bottom-left">
+				<div class="extends-grids-icon"></div>
+				<div class="extends-grids_label">hh</div>
+					</div>
+          <div class="grids-right-bottom-right">
+				<div class="extends-grids-icon"></div>
+				<div class="extends-grids_label">hh</div>
+					</div>
+        </div> -->
+      </div>
+    </div>
+    <div class="feed-card-bd">
+      <a class="feed-card-item" href="">
+        <img class="feed-card-img" src="../images/personal.jpg" />
+        <div class="mask"></div>
+        <div class="feed-card-info">
+          <p class="feed-card-title">
+						鳄鱼养生论坛
+					</p>
+					<p class="feed-card-detail">
+						点击进入
+					</p>
+        </div>
+      </a>
+			<a class="feed-card-item" href="">
+        <img class="feed-card-img" src="../images/personal.jpg" />
+        <div class="mask"></div>
+        <div class="feed-card-info">
+          <p class="feed-card-title">
+						瞬风420
+					</p>
+					<p class="feed-card-detail">
+						点击进入
+					</p>
+        </div>
+      </a>
+    </div>
+		<script src="../js/jquery-2.1.4.min.js"></script>
+		<script src="../js/swiper.min.js"></script>
+
+		<script>
+		var swiper = new Swiper('.swiper-container', {
+		 pagination: '.swiper-pagination',
+		 paginationClickable: true,
+		 spaceBetween: 30,
+		 centeredSlides: true,
+		 autoplay: 2500,
+		 autoplayDisableOnInteraction: false
+ });
+ </script>
+		</script>
+	</body>
+</html>
