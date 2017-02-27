@@ -10,7 +10,7 @@ var cssnano = require('gulp-cssnano');
 var header = require('gulp-header');
 var pkg = require('./package.json');
 
-var banner = 
+var banner =
 "/**\n\
 * weui extends v" + pkg.version + "\n\
 * author ruansongsong\n\
@@ -41,6 +41,23 @@ gulp.task('lessed', function () {
 	}))
 
 	.pipe(gulp.dest('../workspace/trunk/src/main/webapp/static/css/'))
+});
+
+gulp.task('extra', function () {
+	gulp.src('src/test/weui-extend.less')
+	.pipe(sourcemaps.init())
+	.pipe(less())
+	.pipe(postcss([autoprefixer(['ios >= 7', 'android >= 4.1'])]))
+	.pipe(header(banner))
+	.pipe(cssnano({
+            zindex: false,
+            autoprefixer: false
+        }))
+	.pipe(rename(function (path) {
+		path.basename += '.min';
+	}))
+
+	.pipe(gulp.dest('../yeekent_extra/dist/style/'))
 });
 
 gulp.task('watch', function() {

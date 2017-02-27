@@ -6,7 +6,3 @@
 
 ## 具体使用方法请移步wiki
 [Wiki](https://github.com/ruansongsong/weui-extends/wiki)
-## Demo
-[地址待更新](#)
-
-readme待续
